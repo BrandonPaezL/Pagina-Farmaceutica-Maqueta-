@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - PharmaSecure</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        // Verificar si el usuario está logueado
+        if (!localStorage.getItem('loggedIn')) {
+            // Si no está logueado, redirigir al login
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_no_background.png" alt="PharmaSecure Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="seguimiento.html">Seguimiento</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h1>Sobre Nosotros</h1>
+            <p>En <strong>PharmaSecure</strong>, somos una empresa con más de 20 años de experiencia en la distribución de medicamentos de alta calidad, con un enfoque en la seguridad y el bienestar de nuestros clientes.</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nuestra Historia</h2>
+                    <p>PharmaSecure fue fundada en el año 2000, y desde entonces hemos trabajado incansablemente para garantizar que nuestros productos lleguen a hospitales, clínicas y farmacias de manera segura y eficiente. Nuestro compromiso con la excelencia ha sido nuestra guía en cada paso del camino.</p>
+                    
+                    <h2>Misión</h2>
+                    <p>Nuestra misión es proveer medicamentos de calidad, asegurando una distribución confiable y rápida para mejorar la salud de las personas y comunidades a las que servimos.</p>
+
+                    <h2>Visión</h2>
+                    <p>Ser reconocidos como la empresa líder en distribución farmacéutica, destacada por su innovación, eficiencia y compromiso con el bienestar social.</p>
+                </div>
+
+                <div class="about-image">
+                    <img src="img/medicos.jpg" alt="Nuestro equipo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PharmaSecure. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

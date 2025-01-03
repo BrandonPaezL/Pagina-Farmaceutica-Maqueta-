@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Productos - PharmaSecure</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        // Verificar si el usuario está logueado
+        if (!localStorage.getItem('loggedIn')) {
+            // Si no está logueado, redirigir al login
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_no_background.png" alt="PharmaSecure Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="seguimiento.html">Seguimiento</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 1">
+                    <h3>Paracetamol</h3>
+                    <p>Precio: $3.000</p>
+                    <p>Alivia dolores leves y reduce la fiebre.</p>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 2">
+                    <h3>Vitamina C</h3>
+                    <p>Precio: $2.500</p>
+                    <p>Refuerza el sistema inmunológico.</p>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 3">
+                    <h3>Ibuprofeno</h3>
+                    <p>Precio: $4.000</p>
+                    <p>Alivia el dolor y reduce la inflamación.</p>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 4">
+                    <h3>Aspirina</h3>
+                    <p>Precio: $3.200</p>
+                    <p>Reduce el dolor y previene coágulos sanguíneos.</p>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 5">
+                    <h3>Vitamina D</h3>
+                    <p>Precio: $2.800</p>
+                    <p>Ayuda a la absorción de calcio y mejora la salud ósea.</p>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 6">
+                    <h3>Omeprazol</h3>
+                    <p>Precio: $5.000</p>
+                    <p>Tratamiento para el reflujo gastroesofágico.</p>
+                </div>
+                <!-- Producto 7 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 7">
+                    <h3>Loratadina</h3>
+                    <p>Precio: $3.500</p>
+                    <p>Alivia síntomas de alergia.</p>
+                </div>
+                <!-- Producto 8 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 8">
+                    <h3>Vitamina B12</h3>
+                    <p>Precio: $3.800</p>
+                    <p>Mejora la energía y salud del sistema nervioso.</p>
+                </div>
+                <!-- Producto 9 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 9">
+                    <h3>Amoxicilina</h3>
+                    <p>Precio: $6.500</p>
+                    <p>Antibiótico para infecciones bacterianas.</p>
+                </div>
+                <!-- Producto 10 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 10">
+                    <h3>Diclofenaco</h3>
+                    <p>Precio: $4.200</p>
+                    <p>Antiinflamatorio y analgésico.</p>
+                </div>
+                <!-- Producto 11 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 11">
+                    <h3>Melatonina</h3>
+                    <p>Precio: $3.700</p>
+                    <p>Regula el sueño y combate el insomnio.</p>
+                </div>
+                <!-- Producto 12 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 12">
+                    <h3>Antigripal</h3>
+                    <p>Precio: $3.000</p>
+                    <p>Alivia síntomas de resfriados comunes.</p>
+                </div>
+                <!-- Producto 13 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 13">
+                    <h3>Azitromicina</h3>
+                    <p>Precio: $7.000</p>
+                    <p>Antibiótico para infecciones respiratorias.</p>
+                </div>
+                <!-- Producto 14 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg"alt="Producto 14">
+                    <h3>Calcio + Vitamina D</h3>
+                    <p>Precio: $4.500</p>
+                    <p>Mejora la salud ósea.</p>
+                </div>
+                <!-- Producto 15 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 15">
+                    <h3>Ibuprofeno 400 mg</h3>
+                    <p>Precio: $4.500</p>
+                    <p>Alivia el dolor intenso.</p>
+                </div>
+                <!-- Producto 16 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 16">
+                    <h3>Vitamina E</h3>
+                    <p>Precio: $2.500</p>
+                    <p>Antioxidante que protege las células.</p>
+                </div>
+                <!-- Producto 17 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 17">
+                    <h3>Vitamina B6</h3>
+                    <p>Precio: $2.200</p>
+                    <p>Mejora la función cerebral y estado de ánimo.</p>
+                </div>
+                <!-- Producto 18 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 18">
+                    <h3>Vitamina A</h3>
+                    <p>Precio: $2.600</p>
+                    <p>Mejora la visión y la piel.</p>
+                </div>
+                <!-- Producto 19 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 19">
+                    <h3>Clorfenamina</h3>
+                    <p>Precio: $3.300</p>
+                    <p>Alivia síntomas de alergia.</p>
+                </div>
+                <!-- Producto 20 -->
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 20">
+                    <h3>Vitamina K</h3>
+                    <p>Precio: $2.700</p>
+                    <p>Mejora la coagulación sanguínea.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PharmaSecure. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

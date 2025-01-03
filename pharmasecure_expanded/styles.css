@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header {
+    background-color: #001f3f;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ffaa00;
+}
+
+.about, .services, .testimonials, .certifications {
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.service {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 60px;
+    height: 60px;
+}
+
+.testimonials p {
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.products-grid {
+    display: grid; /* Usamos grid para organizar productos */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en cada fila */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 2rem 0;
+}
+
+.product {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.product h3 {
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.workflow {
+    padding: 2rem;
+    text-align: center;
+}
+
+.workflow-steps {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.workflow-steps li {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.about-text {
+    width: 60%;
+    text-align: left;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contact-form {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-box input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+.signup-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+.track-order-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.track-order-btn:hover {
+    background-color: #0056b3;
+}
+.order-detail table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.order-detail table th, .order-detail table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.order-detail table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.order-detail .workflow-steps {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.order-detail .workflow-steps li {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workflow-steps .completed {
+    color: green;
+    font-weight: bold;
+}
+
+.workflow-steps .in-progress {
+    color: orange;
+    font-weight: bold;
+}
+
+.workflow-steps .pending {
+    color: red;
+    font-weight: bold;
+}
+
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3;
+}
+
+/* Añadimos padding al body para dejar espacio para el footer */
+body {
+    padding-bottom: 100px; /* Ajusta este valor si necesitas más o menos espacio */
+}
+
+/* Footer sigue fijo, pero ahora con espacio extra */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* Centrar el título de Productos Destacados */
+.featured-products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Centrar el botón y darle un diseño llamativo */
+.featured-products button {
+    display: block;
+    margin: 2rem auto; /* Centrar el botón horizontalmente */
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.featured-products button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón por encima */
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products-grid {
+    display: grid; /* Usamos grid en lugar de flex */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 2rem 0;
+}
+
+.product {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 300px; /* Para que todas las tarjetas tengan una altura mínima consistente */
+    width: 100%; /* Asegura que cada producto ocupe todo el espacio disponible en la columna */
+}
+
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.product h3 {
+    margin: 1rem 0;
+}
+
+.product p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Centrar el título */
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 86px; /* Ajusta el tamaño del logo según lo que prefieras */
+    height: auto; /* Mantiene las proporciones del logo */
+    margin: 0 auto; /* Centra el logo si es necesario */
+    display: block; /* Asegura que el logo se comporte como un bloque */
+}
+
+.about-us {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4; /* Fondo suave */
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-text {
+    width: 60%;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container {
+    padding: 4rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.welcome-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.welcome-actions .btn {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-actions .btn:hover {
+    background-color: #0056b3;
+}
+
+.welcome-actions .btn-secondary {
+    background-color: #6c757d;
+}
+
+.welcome-actions .btn-secondary:hover {
+    background-color: #565e64;
+}

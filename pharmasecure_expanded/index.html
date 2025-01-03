@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaSecure</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        // Verificar si el usuario está logueado
+        if (!localStorage.getItem('loggedIn')) {
+            // Si no está logueado, redirigir al login
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_no_background.png" alt="PharmaSecure Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="seguimiento.html">Seguimiento</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero con Llamada a la Acción -->
+        <section class="hero">
+            <h1>Distribución Rápida y Confiable de Medicamentos</h1>
+            <p>Con más de 20 años de experiencia en la entrega segura de medicamentos a clínicas y hospitales.</p>
+            <button onclick="location.href='productos.html'">Explora Nuestros Productos</button>
+        </section>
+
+        <!-- Nuestros Servicios -->
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-container">
+                <div class="service">
+                    <img src="img/pharmacy (1).png" alt="Venta de Medicamentos">
+                    <h3>Venta de Medicamentos</h3>
+                    <p>Ofrecemos una amplia variedad de medicamentos con entrega garantizada.</p>
+                </div>
+                <div class="service">
+                    <img src="img/truck-side.png" alt="Distribución">
+                    <h3>Distribución Rápida</h3>
+                    <p>Contamos con una flota de distribución propia para garantizar que tus pedidos lleguen a tiempo.</p>
+                </div>
+                <div class="service">
+                    <img src="img/warehouse-alt.png" alt="Gestión de Inventarios">
+                    <h3>Gestión de Inventarios</h3>
+                    <p>Mantenemos control de inventarios para asegurar la disponibilidad de productos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 1">
+                    <h3>Medicamento 1</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 2">
+                    <h3>Medicamento 2</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 3">
+                    <h3>Medicamento 3</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+                <div class="product">
+                    <img src="img/paracetamol.jpg" alt="Producto 3">
+                    <h3>Medicamento 3</h3>
+                    <p>Descripción breve del producto.</p>
+                </div>
+            </div>
+            <button onclick="location.href='productos.html'">Ver Todos los Productos</button>
+        </section>
+
+        <!-- Formulario de Suscripción -->
+        <section class="newsletter">
+            <h2>Suscríbete a Nuestro Newsletter</h2>
+            <p>Recibe nuestras últimas novedades y actualizaciones directamente en tu bandeja de entrada.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Ingresa tu correo electrónico">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PharmaSecure. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

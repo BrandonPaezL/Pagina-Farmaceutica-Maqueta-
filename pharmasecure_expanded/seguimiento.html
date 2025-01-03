@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Pedidos - PharmaSecure</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        // Verificar si el usuario está logueado
+        if (!localStorage.getItem('loggedIn')) {
+            // Si no está logueado, redirigir al login
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_no_background.png" alt="PharmaSecure Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="seguimiento.html">Seguimiento</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="workflow">
+            <h1>Seguimiento de Pedidos</h1>
+            <p>Aquí puedes ver el estado actual de tus pedidos. Este es el flujo de trabajo que seguimos:</p>
+            <ul class="workflow-steps">
+                <li><strong>Etapa 1:</strong> Cotización recibida</li>
+                <li><strong>Etapa 2:</strong> Orden de compra ingresada</li>
+                <li><strong>Etapa 3:</strong> Preparación de productos</li>
+                <li><strong>Etapa 4:</strong> Pedido en ruta</li>
+                <li><strong>Etapa 5:</strong> Pedido entregado</li>
+            </ul>
+            
+            <!-- Botón para ver el detalle del pedido -->
+            <button onclick="location.href='detalle-pedido.html'" class="track-order-btn">Ver Detalle del Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PharmaSecure. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
